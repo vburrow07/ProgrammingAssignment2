@@ -49,10 +49,17 @@ cacheSolve <- function(x, ...) {
 solution<-makeCacheMatrix()
 solution$set(matrix(4:7,2))
 solution$get()
+#    [,1] [,2]
+#[1,]    4    6
+#[2,]    5    7
 
 #Now try inverting this
 solution$setinverse()
 solution$getinverse()
+
+#     [,1] [,2]
+#[1,] -3.5    3
+#[2,]  2.5   -2
 
 
 
